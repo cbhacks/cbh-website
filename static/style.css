@@ -1,0 +1,81 @@
+body {
+    background-color: Silver;
+    font-family: sans-serif;
+}
+
+#page-header {
+    color: black;
+    background-color: DarkSlateGray;
+}
+
+#page-header > h1 {
+    font-family: sans-serif;
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    /* background-image: linear-gradient(to right, GreenYellow, Yellow, OrangeRed);
+    background-clip: text;
+    color: transparent; */
+}
+
+section {
+    color: black;
+    background-color: white;
+    border-radius: 24px 24px 12px 12px;
+}
+
+section > header {
+    color: black;
+    background-color: DarkOrange;
+    border-radius: 12px 12px 0 0;
+}
+
+section > header > h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+table
+{
+    border: 2px solid gray;
+    border-spacing: 0px;
+    empty-cells: show;
+    width: 100%;
+}
+
+caption
+{
+    padding: 4px;
+    color: white;
+    background-color: teal;
+    font-size: 12pt;
+    font-weight: bold;
+    border-radius: 8px 8px 0px 0px;
+}
+
+td
+{
+    margin: 0px;
+    padding: 4px;
+}
+
+thead tr,tbody tr th
+{
+    background-color: silver;
+    font-weight: bold;
+    text-align: center;
+}
+
+tbody tr td
+{
+    border: 1px solid gray;
+}
+
+tfoot tr
+{
+    color: white;
+    background-color: navy;
+    font-weight: bold;
+    font-style: italic;
+    font-style: italic;
+}
