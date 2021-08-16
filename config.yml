@@ -1,0 +1,20 @@
+baseURL: https://www.cbhacks.com/
+languageCode: en-us
+title: CBHacks
+disableKinds:
+  - taxonomy
+  - term
+  - sitemap
+outputs:
+  home:
+    - html
+  page:
+    - html
+  section:
+    - html
+menu:
+  main:
+  - identifier: github
+    name: GitHub
+    url: https://github.com/cbhacks/
+    weight: 50

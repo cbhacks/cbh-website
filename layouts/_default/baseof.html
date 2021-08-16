@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <title>{{ if not .IsHome }}{{.Title}} - {{ end }}{{.Site.Title}}</title>
+
+        <!-- Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <header>
+            {{ partial "navbar" . }}
+            {{ partial "banner" . }}
+        </header>
+        <main class="container-md mt-2">
+            {{ template "main" . }}
+        </main>
+
+    </body>
+</html>

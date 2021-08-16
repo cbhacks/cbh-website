@@ -1,0 +1,6 @@
+{{ if .Params.banner }}
+<div style="overflow: hidden; background-color: #00056a;">
+    <img src="{{.Params.banner}}" class="d-none d-lg-block h-auto" style="min-width: 992px;" alt="">
+    <img src="{{.Params.banner}}" class="d-none d-sm-block d-lg-none w-100 h-auto" alt="">
+</div>
+{{ end }}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ $pager := .Paginate .Pages }}
+
+{{ partial "breadcrumbs" . }}
+
+{{ if eq $pager.First $pager }}
+<h1>{{.Title}}</h1>
+{{.Content}}
+{{ if ne $pager.TotalPages 0 }}
+<hr>
+{{ end }}
+{{ end }}
+
+{{ partial "pager" $pager }}
+{{ range $pager.Pages }}
+
+{{ partial "card/start" (dict "color" "primary") }}
+{{ partial "card/emblem" .Params.emblem }}
+{{ partial "card/title" (dict "url" .RelPermalink "title" .Title) }}
+{{.Summary}}
+{{ partial "card/end" }}
+
+{{ end }}
+{{ partial "pager" $pager }}
+{{ end }}

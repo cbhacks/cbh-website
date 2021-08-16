@@ -1,0 +1,24 @@
+{{ with .Parent }}
+{{ if eq .Name "cardset" }}
+<div class="col-sm">
+{{ end }}
+{{ end }}
+
+{{ partial "card/start" (dict "color" "primary") }}
+{{ partial "card/emblem" (.Get "emblem") }}
+{{ if .Get "ref" }}
+    {{ $page := $.Page.GetPage (.Get "ref") }}
+    {{ $title := or (.Get "title") $page.Title }}
+    {{ partial "card/title" (dict "url" $page.RelPermalink "title" $title) }}
+    {{or .Inner $page.Summary}}
+{{ else }}
+    {{ partial "card/title" (dict "url" (.Get "url") "title" (.Get "title")) }}
+    {{.Inner}}
+{{ end }}
+{{ partial "card/end" }}
+
+{{ with .Parent }}
+{{ if eq .Name "cardset" }}
+</div>
+{{ end }}
+{{ end }}

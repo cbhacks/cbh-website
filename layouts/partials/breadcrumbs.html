@@ -1,0 +1,22 @@
+{{ define "breadcrumbs-tail-impl" }}
+
+{{ if .Parent }}
+{{ template "breadcrumbs-tail-impl" .Parent }}
+{{ end }}
+
+<li class="breadcrumb-item">
+    <a href="{{.RelPermalink}}">{{.Title}}</a>
+</li>
+
+{{ end }}
+
+<nav>
+    <ol class="breadcrumb">
+        {{ if .Parent }}
+        {{ template "breadcrumbs-tail-impl" .Parent }}
+        {{ end }}
+        <li class="breadcrumb-item active">
+            {{.Title}}
+        </li>
+    </ol>
+</nav>
