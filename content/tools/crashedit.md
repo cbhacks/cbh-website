@@ -19,8 +19,8 @@ A few features require [DRNSF]({{< relref "drnsf" >}}) and [PCSX-HDBG]({{< relre
 
 ## Downloads
 
-{{<card url="https://builds.crashedit.cbhacks.com/appveyor/build-10192/CrashEdit-10192-647a97b004e7324ac4f648dcfcecc7d3f8412da3.zip" title="Windows or Mono (.zip)">}}
-Build 10192
+{{<card latestfile="builds.crashedit.cbhacks.com/appveyor" title="Windows or Mono (.zip)">}}
+Latest version
 {{</card>}}
 
 ## Source Code

@@ -23,8 +23,8 @@ The toolkit is designed for Windows systems only. For other systems, most progra
 
 ### Downloads
 
-{{<card url="https://toolkit.cbhacks.com/cbh-toolkit-20210410-171445-9CAEE68B.zip" title="Windows 32-bit (.zip)">}}
-20210410
+{{<card latestfile="toolkit.cbhacks.com/main" title="Windows 32-bit (.zip)">}}
+Latest version
 {{</card>}}
 
 ### Source Code

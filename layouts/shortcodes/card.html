@@ -11,6 +11,11 @@
     {{ $title := or (.Get "title") $page.Title }}
     {{ partial "card/title" (dict "url" $page.RelPermalink "title" $title) }}
     {{or .Inner $page.Summary}}
+{{ else if .Get "latestfile" }}
+    {{ $info := getJSON "https://api.cbhacks.com/v1/latestfiles/" (.Get "latestfile") }}
+    {{ partial "card/title" (dict "url" $info.url "title" (.Get "title")) }}
+    <h6 class="card-subtitle mb-2 text-muted">Build {{$info.buildnum}}</h6>
+    {{.Inner}}
 {{ else }}
     {{ partial "card/title" (dict "url" (.Get "url") "title" (.Get "title")) }}
     {{.Inner}}

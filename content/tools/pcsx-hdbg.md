@@ -14,8 +14,8 @@ TBD
 
 ## Downloads
 
-{{<card url="https://misc-tools.cbhacks.com/pcsx-hdbg/pcsx-hdbg-n0043-63df1ea3a4ef77cd02dbdbc58b978ff2ffa55f78-i686.zip" title="Windows 32-bit (.zip)">}}
-Build n0043
+{{<card latestfile="misc-tools.cbhacks.com/pcsx-hdbg-i686" title="Windows 32-bit (.zip)">}}
+Latest version
 {{</card>}}
 
 ## Source Code
